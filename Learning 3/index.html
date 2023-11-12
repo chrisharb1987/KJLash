@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lashed By KJ Checkout Page</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.svg" alt="logo">
+                <span>Lashed By KJ</span>
+            </div>
+            <div id="menutoggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="navlinks">
+                <ul id="links-inner">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Specs</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <img src="cart.svg" alt="cartss">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="caption">
+            <div class="head">
+                <h1>NOIR-Lash Glue</h1>
+                <p>NOIR Lash Adhesive: Boldly secure lashes with flawless, long-lasting precision.</p>
+            </div>
+            <div class="cta">
+                <a href="#">Add to Cart</a>
+            </div>
+        </div>
+        <div class="svg">
+            <img src="lash.webp" alt="img">
+        </div>
+    </section>
+
+    <img class="background-dot" src="big-eclipse.svg" alt="circle">
+
+    <script>
+        var menuicon = document.getElementById("menutoggle");
+        var menulinks = document.getElementById("links-inner");
+
+        menuicon.onclick = function () {
+            menulinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
